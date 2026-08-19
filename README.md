@@ -33,3 +33,15 @@ npm run build
 
 ## Ajuste de layout do cronômetro
 O cronômetro foi movido para um painel independente abaixo do placar, preservando o alinhamento original dos times, placar e status da partida.
+
+## GitHub Pages
+
+Esta versão está preparada para publicação no GitHub Pages.
+
+1. Faça push para a branch `main`.
+2. No GitHub, abra **Settings > Pages**.
+3. Em **Build and deployment > Source**, selecione **GitHub Actions**.
+4. Aguarde o workflow **Deploy Vite to GitHub Pages** em **Actions**.
+5. O link final aparecerá em **Settings > Pages**.
+
+A configuração usa `base: './'` e `import.meta.env.BASE_URL` para evitar tela branca quando o repositório é publicado em `https://usuario.github.io/repositorio/`.
